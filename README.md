@@ -28,7 +28,8 @@ cd screen-time-control
 chmod +x index.js
 
 3. Run the script:
-```
+
+```bash
 ./index.js [command] [minutes]
 
 Or with Node.js:
