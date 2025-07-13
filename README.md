@@ -21,26 +21,31 @@ A simple Node.js CLI utility for managing your Mac's screen time - lock the scre
 ```bash
 git clone https://github.com/your-username/screen-time-control.git
 cd screen-time-control
+```
 
 2. Make the script executable (optional):
 
 ```bash
 chmod +x index.js
+```
 
 3. Run the script:
 
 ```bash
 ./index.js [command] [minutes]
+```
 
 Or with Node.js:
 
 ```bash
 node index.js [command] [minutes]
+```
 
 ## Usage
 
 ```bash
 node index.js [command] [minutes]
+```
 
 | Command          | Description                                                            
 | ---------------- | ---------------------------------------------------------------------- 
