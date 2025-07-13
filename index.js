@@ -9,7 +9,6 @@ const timeInSeconds = timeInMinutes * 60;
 
 const run = () => {
   const config = getCommandMap(timeInMinutes, timeInSeconds)[commandKey];
-  console.log(config)
   const { command, logMessage } = config || {};
   if (commandKey === "--help" || commandKey === "-h") {
     printHelp();
