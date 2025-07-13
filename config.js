@@ -2,7 +2,7 @@ const pauseChromeMediaCmd =
 `osascript -e 'tell application "Google Chrome"' -e 'set js to "var media = document.querySelector(\\"video, audio\\"); if(media) { media.pause(); }"' -e 'repeat with w in windows' -e 'repeat with t in tabs of w' -e 'try' -e 'tell t to execute javascript js' -e 'end try' -e 'end repeat' -e 'end repeat' -e 'end tell'`;
 
 const getShellCommandList = (timeInMinutes, timeInSeconds) => {
-  const lockScreen = "pmset displaysleepnow && echo Screen locked";
+  const lockScreen = "pmset sleepnow && echo Screen locked";
   const wifiOffCmd = `networksetup -setairportpower en0 off && echo "WiFi turned off"`;
   return {
     sleep: () => `sleep ${timeInSeconds} && ${lockScreen}`,
