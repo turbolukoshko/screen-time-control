@@ -22,6 +22,8 @@ const run = () => {
     process.exit(1);
   }
 
+  console.log(logMessage);
+
   exec(command(), (error, stdout, stderr) => {
     if (error) {
       console.error("❌ Error executing command:", error);
